@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.911)
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(121, 112, 112);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+    <title>Grouping Tags</title>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore unde, nostrum molestias nobis temporibus veritatis, debitis ut alias recusandae inventore, nulla nisi explicabo in at eaque veniam laboriosam incidunt nam.</p>
+                <aside>
+                    <p>Artigo Escrito por Fonseca</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias sobre o futebol</h2>
+                <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur reiciendis laboriosam laborum ducimus quos iusto. Quos architecto rerum quidem nostrum dicta provident non id modi doloremque. Optio, aspernatur possimus.</q></p>
+                <aside>
+                    <p>Fala de Galvão Bueno</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Anndrey Levi</p>
+    </footer>
+</body>
+</html>
