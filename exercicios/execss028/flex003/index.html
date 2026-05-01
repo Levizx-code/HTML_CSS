@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            
+            display: flex;
+            height: 100px;
+            flex-flow: column nowrap;
+        }
+        div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+            
+        }
+        div#quadrado{
+            width: 160px;
+            height: 120px;
+            margin-top: 50vh;
+            border: 2px solid #333;
+            background-color: #472f2f;
+            padding: 20px;
+            position: absolute;
+        }
+        div#quadrado > p{
+            display: block;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-20%, -150%);
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">exemplo de bloco A</div>
+        <div class="item">exemplo de bloco B</div>
+        <div class="item">exemplo de bloco C</div>
+        <div class="item">exemplo de bloco D</div>
+        <div class="item">exemplo de bloco E</div>
+    </div>
+    <div id="quadrado">
+        <p>quadrado</p>
+    </div>
+</body>
+</html>
